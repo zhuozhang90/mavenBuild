@@ -1,0 +1,73 @@
+###################################
+# CS622 HW2 File Merge and Search #
+# Zhuo Zhang                      # 
+# zzhang90@bu.edu                 #
+###################################
+
+## environment
+
+* using openjdk-8 on Ubuntu 18.04 under Eclipse IDE.
+
+* package name: edu.bu.cs622.hw2.
+
+* file paths
+
+	* source file directory: src/edu/bu/cs622/hw2.
+
+	* merged file directory: /home/zzhang/Projects/eclipse-workspace/bu/file.
+
+## code
+
+* FileMerge.java
+
+	> handles merging files from one category into a single file.
+ 
+	* listFiles(): takes a String of file directory and outputs a list containing all 
+		absolute paths of files in that directory, including its sub-directories.
+
+	* separateFileList(): takes a list of file paths as String and the category name as
+		a String, returns a new list of paths of files in that category.
+
+	* mergeFiles(): takes a list of file paths and a string of merged file name,
+		 returns a String of merged file path.
+
+	* readFile(): helper function that reads file content into a String using a string
+		builder.
+
+* FileSearch.java
+	
+	> searches a file for matches from given regex String.
+
+	* regexSearch(): takes a String of file path, a String of regex and returns all lines
+		in the file that contain the given regex String.
+
+* Run.java:
+	
+	> calls methods from FileMerge and FileSearch then outputs merged file paths and 
+		search results from different files.
+
+## how to use
+
+* using eclipse: the file/ directory has to exist in root folder of project for mergeFile() 
+	to correctly place merged files. alternatively code can be added to create the 
+	directory (to be implemented).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
